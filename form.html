@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/cat.jpg">
+    <title>Form page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Index</a>
+        </nav>
+        <h1>Registration form</h1>
+    </header>
+    <main>
+        <section>
+            <form action="https://formspree.io/myynkodj" method="post">
+                <label>
+                    Name
+                    <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <br>
+                <label>
+                    Mail
+                    <input type="text" name="mail" placeholder="Your mail" required>
+                </label>
+                <br>
+                <label>Gender:</label>
+                <label>
+                    <input type="radio" name="gender" value="male">Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">Other
+                </label>
+                <br>
+                <input type="submit" value="Send">
+                <input type="reset" value = "Reset">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
