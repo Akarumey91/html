@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/cat.jpg">
+    <link rel="icon" href="img/quiz.jpg">
     <title>Form page</title>
 </head>
 <body>
@@ -11,32 +11,55 @@
         <nav>
             <a href="index.html">Home page</a>
         </nav>
-        <h1>Registration form</h1>
+        <h1>Fast QUIZ</h1>
+        <img src="img/quiz.jpg" alt="quiz" height="50%" width="50%">
+        <p>Please, answer on few question. Let this small quiz will give you a little fun =)</p>
     </header>
     <main>
         <section>
             <form action="https://formspree.io/myynkodj" method="post">
-                <label>
-                    Name
-                    <input type="text" name="name" placeholder="Your name" required>
-                </label>
-                <br>
-                <label>
-                    Mail
-                    <input type="text" name="mail" placeholder="Your mail" required>
-                </label>
-                <br>
-                <label>Gender:</label>
-                <label>
-                    <input type="radio" name="gender" value="male">Male
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="female">Female
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="other">Other
-                </label>
-                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">What's your name?</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">Your mail?</label>
+                        </td>
+                        <td>
+                            <input type="text" name="mail" id="mail" placeholder="Your mail" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gender:</label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="gender" value="male">Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female">Female
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="other">Other
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>One?</td>
+                        <td>1 answer</td>
+                    </tr>
+                    <tr>
+                        <td>Two?</td>
+                        <td>2 answer</td>
+                    </tr>
+                </table><br>
                 <input type="submit" value="Send">
                 <input type="reset" value = "Reset">
             </form>
